@@ -35,6 +35,7 @@ def get_pull_request_data(repo_name: str, pull_number: int) -> Optional[PullRequ
     try:
         logging.info(f"Fetching PR data for repo: {repo_name}, PR number: {pull_number}")
         repo = g.get_repo(repo_name)
+        print(f"Fetched repository: {repo}")
         pr = repo.get_pull(pull_number)
 
         files = pr.get_files()
