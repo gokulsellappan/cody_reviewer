@@ -3,5 +3,4 @@ python-dotenv
 pytest
 PyGithub
 openai
-
-
+google-generativeai
